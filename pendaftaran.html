@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Komunitas Web Mahasiswa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main class="container">
+    <section class="formulir-pendaftaran">
+        <h2>Formulir Pendaftaran</h2>
+        <p>Komunitas Web Mahasiswa</p>
+        <p>Lengkapi data berikut dengan benar.</p>
+
+        <form id="formPendaftaran">
+
+            <div class="form-group">
+                <label for="nama">Nama Lengkap *</label>
+                <input
+                    type="text"
+                    id="nama"
+                    name="nama"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="telepon">Nomor Telepon *</label>
+                <input
+                    type="tel"
+                    id="telepon"
+                    name="telepon"
+                    placeholder="Contoh: 081234567890"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="nama@email.com"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="jumlahTiket">Jumlah Tiket *</label>
+                <input
+                    type="number"
+                    id="jumlahTiket"
+                    name="jumlahTiket"
+                    min="1"
+                    max="10"
+                    value="1"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="kodePeserta">Kode Peserta *</label>
+                <input
+                    type="text"
+                    id="kodePeserta"
+                    name="kodePeserta"
+                    placeholder="Masukkan kode peserta"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="prodi">Program Studi *</label>
+                <input
+                    type="text"
+                    id="prodi"
+                    name="prodi"
+                    placeholder="Contoh: D4 TRPL"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="kehadiran">Metode Kehadiran *</label>
+                <select id="kehadiran" name="kehadiran" required>
+                    <option value="">-- Pilih metode --</option>
+                    <option value="Luring">Luring (Tatap Muka)</option>
+                    <option value="Daring">Daring (Online)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="topik">Pilihan Topik *</label>
+                <select id="topik" name="topik" required>
+                    <option value="">-- Pilih topik --</option>
+                    <option value="HTML">HTML Dasar</option>
+                    <option value="Aksesibilitas HTML">
+                        Aksesibilitas HTML
+                    </option>
+                </select>
+            </div>
+
+            <button type="submit">Kirim Pendaftaran</button>
+
+            <p id="pesanPendaftaran" aria-live="polite"></p>
+
+        </form>
+    </section>
+</main>
